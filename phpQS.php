@@ -8,7 +8,7 @@ use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 $connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUNT_NAME').";AccountKey=".getenv('ACCOUNT_KEY');
 // Create blob client.
-$blobClient = BlobRestProxy::createBlobService($connectionString);
+// $blobClient = BlobRestProxy::createBlobService($connectionString);
 // $fileToUpload = "flutter.jpg";
 
 if (!isset($_GET["Cleanup"])) {
