@@ -13,7 +13,7 @@ $connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUN
 
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
-$fileToUpload = "flutter.jpg";
+// $fileToUpload = "flutter.jpg";
 
 // if (!isset($_GET["Cleanup"])) {
     // Create container options object.
