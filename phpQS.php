@@ -17,7 +17,7 @@ $fileToUpload = "flutter.jpg";
 
 if (!isset($_GET["Cleanup"])) {
     // Create container options object.
-    $createContainerOptions = new CreateContainerOptions();
+    // $createContainerOptions = new CreateContainerOptions();
 
     // Set public access policy. Possible values are
     // PublicAccessType::CONTAINER_AND_BLOBS and PublicAccessType::BLOBS_ONLY.
