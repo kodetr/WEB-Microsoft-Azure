@@ -15,7 +15,7 @@ $connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUN
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
 if (!isset($_GET["Cleanup"])) {
-    $fileToUpload = "./flutter.jpg";
+    $fileToUpload = "flutter.jpg";
     // Create container options object.
     $createContainerOptions = new CreateContainerOptions();
 
@@ -61,7 +61,7 @@ if (!isset($_GET["Cleanup"])) {
 
         // List blobs.
         $listBlobsOptions = new ListBlobsOptions();
-        $listBlobsOptions->setPrefix("HelloWorld");
+        $listBlobsOptions->setPrefix("flutter");
 
         echo "These are the blobs present in the container: ";
 
