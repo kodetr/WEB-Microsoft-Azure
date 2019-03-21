@@ -10,7 +10,7 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 $connectionString = "DefaultEndpointsProtocol=https;AccountName=webtanwirstroge;AccountKey=E5o6vEMne2dBek+CCtEne3drymesMGOWLC3uCE1zd08NeAqK1SxPX8HSSKKWtXBznrM2uX1LgKaWqGBr95XPbg==";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
-$fileToUpload = "flutter.jpg";
+$fileToUpload = "webtanwir.txt";
 
 if (!isset($_GET["Cleanup"])) {
     // Create container options object.
@@ -51,7 +51,7 @@ if (!isset($_GET["Cleanup"])) {
         $blobClient->createBlockBlob($containerName, $fileToUpload, $content);
         // List blobs.
         $listBlobsOptions = new ListBlobsOptions();
-        $listBlobsOptions->setPrefix("flutter");
+        $listBlobsOptions->setPrefix("webtanwir.txt");
         echo "These are the blobs present in the container: ";
         do{
             $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
