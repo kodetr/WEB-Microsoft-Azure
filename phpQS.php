@@ -33,13 +33,13 @@ if (!isset($_GET["Cleanup"])) {
     // anonymous request.
     // If this value is not specified in the request, container data is
     // private to the account owner.
-    $createContainerOptions->setPublicAccess(PublicAccessType::CONTAINER_AND_BLOBS);
+    // $createContainerOptions->setPublicAccess(PublicAccessType::CONTAINER_AND_BLOBS);
 
-    // Set container metadata.
-    $createContainerOptions->addMetaData("key1", "value1");
-    $createContainerOptions->addMetaData("key2", "value2");
+    // // Set container metadata.
+    // $createContainerOptions->addMetaData("key1", "value1");
+    // $createContainerOptions->addMetaData("key2", "value2");
 
-      $containerName = "blockblobs".generateRandomString();
+    //   $containerName = "blockblobs".generateRandomString();
 
     // try {
     //     // Create container.
