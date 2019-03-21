@@ -6,10 +6,11 @@ use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
 use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
-// $connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUNT_NAME').";AccountKey=".getenv('ACCOUNT_KEY');
+
+$connectionString = "DefaultEndpointsProtocol=https;AccountName=webtanwirstroge;AccountKey=E5o6vEMne2dBek+CCtEne3drymesMGOWLC3uCE1zd08NeAqK1SxPX8HSSKKWtXBznrM2uX1LgKaWqGBr95XPbg==";
 // Create blob client.
-// $blobClient = BlobRestProxy::createBlobService($connectionString);
-// $fileToUpload = "flutter.jpg";
+$blobClient = BlobRestProxy::createBlobService($connectionString);
+$fileToUpload = "flutter.jpg";
 
 if (!isset($_GET["Cleanup"])) {
 //     // Create container options object.
